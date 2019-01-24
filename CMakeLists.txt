@@ -113,3 +113,9 @@ add_executable(mono_euroc
 Examples/Monocular/mono_euroc.cc)
 target_link_libraries(mono_euroc ${PROJECT_NAME})
 
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/RealSense)
+
+add_executable(rgbd_realsense
+Examples/RealSense/rgbd_realsense.cc)
+target_link_libraries(rgbd_realsense ${PROJECT_NAME})
+
